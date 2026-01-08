@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAOFANT Projects Limited | Building with Integrity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- carousel -->
+<div class="carousel-container">
+    <div class="fade-slide active">
+      <img src="1.jpg" alt="Image 1">
+    </div>
+    <div class="fade-slide">
+      <img src="2.jpg" alt="Image 2">
+    </div>
+    <div class="fade-slide">
+      <img src="3.jpg" alt="Image 3">
+    </div>
+    <div class="fade-slide">
+      <img src="4.jpg" alt="Image 4">
+    </div>
+    <div class="fade-slide">
+      <img src="5.jpg" alt="Image 4">
+    </div>
+  </div>
+  
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="sofant-logo.jpg" alt="SAOFANT Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active" onclick="showPage('home')">Home</a></li>
+                <li><a href="#about" class="nav-link" onclick="showPage('about')">About</a></li>
+                <li><a href="#services" class="nav-link" onclick="showPage('services')">Services</a></li>
+                <li><a href="#projects" class="nav-link" onclick="showPage('projects')">Projects</a></li>
+                <li><a href="#contact" class="nav-link" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>SAOFANT PROJECTS LIMITED</h1>
+                <div class="tagline">Building with Integrity</div>
+                <p>Delivering world-class construction, design, and real estate solutions across Nigeria. We transform visions into structures that stand the test of time.</p>
+                <a href="#contact" class="cta-button" onclick="showPage('contact')">Request a Consultation</a>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section style="background: var(--light-gray);">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive construction and design solutions tailored to your needs</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Building Design</h3>
+                    <p>Innovative architectural designs that blend functionality with aesthetics. From concept to detailed plans, we create spaces that inspire.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Building Construction</h3>
+                    <p>Quality construction services delivered on time and within budget. We build residential, commercial, and industrial projects with precision.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h3>Renovation Services</h3>
+                    <p>Transform existing spaces into modern, functional environments. Expert renovation and remodeling that breathes new life into structures.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏘️</div>
+                    <h3>Real Estate Consultancy</h3>
+                    <p>Expert guidance on property investment, development, and management. Make informed decisions with our strategic real estate insights.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why SAOFANT -->
+        <section class="why-section">
+            <h2 class="section-title">Why Choose SAOFANT</h2>
+            <p class="section-subtitle">Built on a foundation of excellence and trust</p>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="icon">⭐</div>
+                    <h3>Proven Experience</h3>
+                    <p>Years of successful project delivery across diverse sectors, from residential to commercial developments.</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon">✓</div>
+                    <h3>Uncompromising Quality</h3>
+                    <p>We use premium materials and employ skilled professionals to ensure every project meets the highest standards.</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon">⏱️</div>
+                    <h3>Timely Delivery</h3>
+                    <p>Efficient project management ensures we complete projects on schedule without compromising quality.</p>
+                </div>
+                <div class="why-item">
+                    <div class="icon">🛡️</div>
+                    <h3>Safety First</h3>
+                    <p>Rigorous safety protocols protect our team and your investment throughout every phase of construction.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Preview -->
+        <div class="projects-grid" style="margin-bottom: 4rem;">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop" alt="Lagos Commercial Tower" class="project-image-real">
+                    <div class="project-content">
+                        <h3>Lagos Commercial Tower</h3>
+                        <p><strong>Location:</strong> Victoria Island, Lagos</p>
+                        <p>15-story modern office complex with advanced infrastructure, smart building technology, and sustainable design features.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&auto=format&fit=crop" alt="Abuja Garden Estate" class="project-image-real">
+                    <div class="project-content">
+                        <h3>Abuja Garden Estate</h3>
+                        <p><strong>Location:</strong> Guzape District, Abuja</p>
+                        <p>Luxury residential development featuring 50 contemporary homes with modern amenities and beautiful landscaping.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&auto=format&fit=crop" alt="Industrial Park Complex" class="project-image-real">
+                    <div class="project-content">
+                        <h3>Industrial Park Complex</h3>
+                        <p><strong>Location:</strong> Ogun State</p>
+                        <p>Large-scale industrial facility with warehousing, manufacturing spaces, and efficient logistics infrastructure.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop" alt="Luxury Hotel Renovation" class="project-image-real">
+                    <div class="project-content">
+                        <h3>Luxury Hotel Renovation</h3>
+                        <p><strong>Location:</strong> Port Harcourt</p>
+                        <p>Complete renovation of 200-room hotel including modern interiors, upgraded facilities, and enhanced guest amenities.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&auto=format&fit=crop" alt="Educational Complex" class="project-image-real">
+                    <div class="project-content">
+                        <h3>Educational Complex</h3>
+                        <p><strong>Location:</strong> Enugu</p>
+                        <p>Modern school facility with classrooms, laboratories, sports facilities, and digital learning infrastructure.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop" alt="Medical Center" class="project-image-real">
+                    <div class="project-content">
+                        <h3>Medical Center</h3>
+                        <p><strong>Location:</strong> Kano</p>
+                        <p>State-of-the-art healthcare facility with specialized treatment rooms, diagnostic centers, and patient care units.</p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- CTA Section -->
+        <section style="background: var(--light-gray); text-align: center;">
+            <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Ready to Start Your Project?</h2>
+            <p style="color: var(--medium-gray); font-size: 1.15rem; margin-bottom: 2rem;">Let's discuss how we can bring your vision to life</p>
+            <a href="#contact" class="cta-button" onclick="showPage('contact')">Get in Touch</a>
+        </section>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <section class="hero" style="padding: 6rem 5% 4rem;">
+            <h1 style="font-size: 3rem;">About SAOFANT</h1>
+            <p class="tagline" style="margin-bottom: 0;">Excellence in Construction & Design</p>
+        </section>
+
+        <section class="about-content">
+            <div class="about-intro">
+                <p>SAOFANT Projects Limited is a leading construction and real estate consultancy firm dedicated to delivering exceptional building solutions across Nigeria. With a commitment to integrity, quality, and innovation, we have established ourselves as a trusted partner for residential, commercial, and industrial projects.</p>
+            </div>
+
+            <h2 class="section-title" style="margin-bottom: 3rem;">Our Mission & Vision</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem;">
+                <div style="padding: 2rem; background: var(--light-gray); border-radius: 8px;">
+                    <h3 style="color: var(--orange); margin-bottom: 1rem;">Mission</h3>
+                    <p style="color: var(--medium-gray); line-height: 1.8;">To deliver world-class construction and design services that exceed client expectations while maintaining the highest standards of quality, safety, and professionalism.</p>
+                </div>
+                <div style="padding: 2rem; background: var(--light-gray); border-radius: 8px;">
+                    <h3 style="color: var(--orange); margin-bottom: 1rem;">Vision</h3>
+                    <p style="color: var(--medium-gray); line-height: 1.8;">To be Nigeria's most trusted and innovative construction firm, recognized for transforming visions into enduring structures that enhance communities.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-bottom: 3rem;">Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="icon">🎯</div>
+                    <h3>Integrity</h3>
+                    <p>We conduct business with honesty, transparency, and ethical practices in every interaction and decision.</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon">💎</div>
+                    <h3>Quality</h3>
+                    <p>Excellence is non-negotiable. We use premium materials and skilled craftsmanship in all our projects.</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon">⏰</div>
+                    <h3>Timely Delivery</h3>
+                    <p>We respect deadlines and ensure efficient project completion without compromising quality standards.</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon">🔒</div>
+                    <h3>Safety</h3>
+                    <p>The wellbeing of our team, clients, and communities is paramount in everything we do.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SERVICES PAGE -->
+    <div id="services" class="page">
+        <section class="hero" style="padding: 6rem 5% 4rem;">
+            <h1 style="font-size: 3rem;">Our Services</h1>
+            <p class="tagline" style="margin-bottom: 0;">Comprehensive Construction Solutions</p>
+        </section>
+
+        <section>
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <div style="margin-bottom: 5rem;">
+                    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center;">
+                        <div style="background: var(--light-gray); height: 300px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 5rem;">🏗️</div>
+                        <div>
+                            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Building Design</h2>
+                            <p style="color: var(--medium-gray); line-height: 1.8; margin-bottom: 1.5rem;">Transform your vision into detailed architectural plans with our expert design services. We create innovative, functional, and aesthetically pleasing designs for residential, commercial, and industrial projects.</p>
+                            <h4 style="color: var(--orange); margin-bottom: 0.8rem;">What You Gain:</h4>
+                            <ul style="color: var(--medium-gray); line-height: 2; margin-left: 1.5rem;">
+                                <li>Custom designs tailored to your specific needs and preferences</li>
+                                <li>3D visualizations and detailed architectural plans</li>
+                                <li>Structural integrity with aesthetic appeal</li>
+                                <li>Compliance with building codes and regulations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 5rem;">
+                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: center;">
+                        <div>
+                            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Building Construction</h2>
+                            <p style="color: var(--medium-gray); line-height: 1.8; margin-bottom: 1.5rem;">From foundation to finish, we deliver quality construction services that bring your projects to life. Our experienced team handles residential, commercial, and industrial builds with precision and professionalism.</p>
+                            <h4 style="color: var(--orange); margin-bottom: 0.8rem;">What You Gain:</h4>
+                            <ul style="color: var(--medium-gray); line-height: 2; margin-left: 1.5rem;">
+                                <li>Quality construction with premium materials</li>
+                                <li>Skilled workforce and modern construction techniques</li>
+                                <li>On-time project completion</li>
+                                <li>Transparent communication throughout the build</li>
+                            </ul>
+                        </div>
+                        <div style="background: var(--light-gray); height: 300px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 5rem;">🏢</div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 5rem;">
+                    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center;">
+                        <div style="background: var(--light-gray); height: 300px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 5rem;">🔨</div>
+                        <div>
+                            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Renovation Services</h2>
+                            <p style="color: var(--medium-gray); line-height: 1.8; margin-bottom: 1.5rem;">Breathe new life into existing structures with our expert renovation and remodeling services. Whether updating a single room or transforming an entire building, we deliver modern, functional results.</p>
+                            <h4 style="color: var(--orange); margin-bottom: 0.8rem;">What You Gain:</h4>
+                            <ul style="color: var(--medium-gray); line-height: 2; margin-left: 1.5rem;">
+                                <li>Modernized spaces with improved functionality</li>
+                                <li>Increased property value</li>
+                                <li>Energy-efficient upgrades</li>
+                                <li>Minimal disruption during renovation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 3rem;">
+                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: center;">
+                        <div>
+                            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Real Estate Consultancy</h2>
+                            <p style="color: var(--medium-gray); line-height: 1.8; margin-bottom: 1.5rem;">Make informed property decisions with our strategic real estate consulting services. We provide expert guidance on investments, development, and property management to maximize your returns.</p>
+                            <h4 style="color: var(--orange); margin-bottom: 0.8rem;">What You Gain:</h4>
+                            <ul style="color: var(--medium-gray); line-height: 2; margin-left: 1.5rem;">
+                                <li>Expert market analysis and investment strategies</li>
+                                <li>Property valuation and feasibility studies</li>
+                                <li>Development planning and project management</li>
+                                <li>Risk mitigation and profit optimization</li>
+                            </ul>
+                        </div>
+                        <div style="background: var(--light-gray); height: 300px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 5rem;">🏘️</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: var(--light-gray); text-align: center;">
+            <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Interested in Our Services?</h2>
+            <p style="color: var(--medium-gray); font-size: 1.15rem; margin-bottom: 2rem;">Contact us to discuss your project requirements</p>
+            <a href="#contact" class="cta-button" onclick="showPage('contact')">Request a Quote</a>
+        </section>
+    </div>
+
+    <!-- PROJECTS PAGE -->
+    <div id="projects" class="page">
+        <section class="hero" style="padding: 6rem 5% 4rem;">
+            <h1 style="font-size: 3rem;">Our Projects</h1>
+            <p class="tagline" style="margin-bottom: 0;">Excellence in Every Build</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Completed Projects</h2>
+            <p class="section-subtitle">A portfolio of successful developments across Nigeria</p>
+            
+            <div class="projects-grid" style="margin-bottom: 4rem;">
+                <div class="project-card">
+                    <div class="project-image">🏢</div>
+                    <div class="project-content">
+                        <h3>Lagos Commercial Tower</h3>
+                        <p><strong>Location:</strong> Victoria Island, Lagos</p>
+                        <p>15-story modern office complex with advanced infrastructure, smart building technology, and sustainable design features.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🏘️</div>
+                    <div class="project-content">
+                        <h3>Abuja Garden Estate</h3>
+                        <p><strong>Location:</strong> Guzape District, Abuja</p>
+                        <p>Luxury residential development featuring 50 contemporary homes with modern amenities and beautiful landscaping.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🏗️</div>
+                    <div class="project-content">
+                        <h3>Industrial Park Complex</h3>
+                        <p><strong>Location:</strong> Ogun State</p>
+                        <p>Large-scale industrial facility with warehousing, manufacturing spaces, and efficient logistics infrastructure.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🏨</div>
+                    <div class="project-content">
+                        <h3>Luxury Hotel Renovation</h3>
+                        <p><strong>Location:</strong> Port Harcourt</p>
+                        <p>Complete renovation of 200-room hotel including modern interiors, upgraded facilities, and enhanced guest amenities.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🏫</div>
+                    <div class="project-content">
+                        <h3>Educational Complex</h3>
+                        <p><strong>Location:</strong> Enugu</p>
+                        <p>Modern school facility with classrooms, laboratories, sports facilities, and digital learning infrastructure.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🏥</div>
+                    <div class="project-content">
+                        <h3>Medical Center</h3>
+                        <p><strong>Location:</strong> Kano</p>
+                        <p>State-of-the-art healthcare facility with specialized treatment rooms, diagnostic centers, and patient care units.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: var(--black); color: var(--white); text-align: center;">
+            <h2 style="font-size: 2.2rem; margin-bottom: 1rem; color: var(--white);">Have a Project in Mind?</h2>
+            <p style="color: rgba(255,255,255,0.8); font-size: 1.15rem; margin-bottom: 2rem;">Let's turn your vision into reality</p>
+            <a href="#contact" class="cta-button" onclick="showPage('contact')">Start Your Project</a>
+        </section>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <section class="hero" style="padding: 6rem 5% 4rem;">
+            <h1 style="font-size: 3rem;">Contact Us</h1>
+            <p class="tagline" style="margin-bottom: 0;">Let's Build Something Great Together</p>
+        </section>
+
+        <section>
+            <div class="contact-container">
+                <div>
+                    <h2 style="margin-bottom: 1.5rem;">Send Us a Message</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button" style="width: 100%; cursor: pointer; border: none;">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h2 style="margin-bottom: 1.5rem;">Get in Touch</h2>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Our Office</h3>
+                            <p>1422 Mainasara Haliru Crescent<br>Zone C, Apo ressettlement, Abuja.<br>Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>saofant_projects@yahoo.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>+234 806 497 3150<br>+234 915 820 2881</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div class="info-content">
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SAOFANT Projects</h3>
+                <p>Building with integrity and excellence. Your trusted partner for construction and real estate solutions across Nigeria.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#home" onclick="showPage('home')">Home</a></p>
+                <p><a href="#about" onclick="showPage('about')">About Us</a></p>
+                <p><a href="#services" onclick="showPage('services')">Services</a></p>
+                <p><a href="#projects" onclick="showPage('projects')">Projects</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <p>Building Design</p>
+                <p>Building Construction</p>
+                <p>Renovation Services</p>
+                <p>Real Estate Consultancy</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 1422 Mainasara Haliru Crescent, Zone C, Apo ressettlement, Abuja.</p><br>
+                <p>📧 saofant_projects@yahoo.com</p><br>
+                <p>📞 +234 806 497 3150, +234 915 820 2881</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SAOFANT Projects Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+
+// Ensure code runs after the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const slides = document.querySelectorAll('.fade-slide');
+      let currentSlide = 0;
+      const slideInterval = 4000; // Change slide every 4 seconds
+
+      function nextSlide() {
+        // Hide current slide
+        slides[currentSlide].classList.remove('active');
+        
+        // Move to next index (loops back to 0 at the end)
+        currentSlide = (currentSlide + 1) % slides.length;
+        
+        // Show next slide
+        slides[currentSlide].classList.add('active');
+      }
+
+      // Start the automatic rotation
+      setInterval(nextSlide, slideInterval);
+    });
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Update nav links
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => link.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Form submission handler
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
