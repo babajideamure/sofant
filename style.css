@@ -322,19 +322,143 @@ section {
 }
 
 /* Services Section */
+.service-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.service-row.reverse {
+    grid-template-columns: 2fr 1fr; /* alternate image/text */
+}
+
 .service-image-container {
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .service-image-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
 .service-image-container:hover img {
     transform: scale(1.05);
 }
+
+.cta-section {
+    background: var(--light-gray);
+    display: flex;               /* flex container */
+    flex-direction: column;      /* stack heading, paragraph, button */
+    align-items: center;         /* center horizontally */
+    justify-content: center;     /* optional vertical centering */
+    gap: 1.5rem;                 /* spacing between elements */
+    padding: 4rem 2rem;          /* spacing around content */
+    text-align: center;          /* ensures text inside heading/paragraph is centered */
+}
+
+.cta-section h2 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.cta-section p {
+    color: var(--medium-gray);
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.cta-section .cta-button {
+    padding: 0.75rem 2rem;
+    background: var(--orange);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.cta-section .cta-button:hover {
+    background: darkorange;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+    }
+
+    .cta-section .cta-button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Text styling */
+.service-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service-text h4 {
+    color: var(--orange);
+    margin-bottom: 0.8rem;
+}
+
+.service-text p {
+    color: var(--medium-gray);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.service-text ul {
+    color: var(--medium-gray);
+    line-height: 2;
+    margin-left: 1.5rem;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+    .service-row,
+    .service-row.reverse {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .service-image-container img {
+        height: auto;
+    }
+
+    .service-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-text h4 {
+        font-size: 1.15rem;
+    }
+
+    .service-text p,
+    .service-text ul {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .service-text ul {
+        margin-left: 1.2rem;
+    }
+}
+
 
 /* Projects Section */
 .projects-grid {
